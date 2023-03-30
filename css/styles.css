@@ -1,10 +1,63 @@
+/*
+** reset only whats necessary
+*
+*
+* Resets 
+ -------------------------*/
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style-type: none;
+    box-sizing: border-box;
 }
 
+/*
+*
+*
+* General variables
+** NOTE: for consistency
+** Generate variables for you fonts and colors
+** modify the onces I genetated for you
+** always work on your projects thinking that one
+** day you would like to share and scale them up
+*/
+:root{
+    --fs-xm: 14px;
+    --fs-base: 16px;
+
+    --text-color-primary: #000000;
+    --text-color-seconddary: #525252;
+    
+}
+
+/*
+NOTE: article to Inheritance
+* https://web.dev/learn/css/inheritance/ 
+* font-family is a Inheritance element 
+* which you will have all around you website
+* complete these following properties
+* 
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: ; */
+    /* letter-spacing: ; */
+    /* word-spacing: ; */
+    /* line-height: ; */
+    
+}
+
+/* 
+** Use classes for yout semantic HTML elements
+** do not target the semantic element to avoid conflicts in 
+** your code in the future since you know other semantic elements can have
+** Header tags. this rule applies for every single HTML elements unless
+** That's why we use resets and files liek normalized.css
+*
+*
+*
+** Artcile to read About normalize.css
+** https://nicolasgallagher.com/about-normalize-css/
+*/
 header {
     background-color: #f63232;
     padding: 10px;
@@ -15,6 +68,12 @@ header {
     top: 0;
     left: 0;
 }
+
+/* 
+* I havent check the code below these line
+* Once you finish and learn about the top topic let me know
+*/
+
 header h1 {
     color: #ffffff;
     border: 8px solid white;
